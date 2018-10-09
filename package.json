@@ -1,0 +1,37 @@
+{
+  "name": "chordpro",
+  "displayName": "chordpro",
+  "description": "Supports the ChordPro syntax for marking up lyrics with chords and directives, see http://www.chordpro.org/",
+  "version": "0.0.1",
+  "publisher": "commoner",
+  "engines": {
+    "vscode": "^1.28.0"
+  },
+  "categories": [
+    "Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "chordpro",
+        "aliases": [
+          "ChordPro",
+          "chordpro"
+        ],
+        "extensions": [
+          ".chordpro",
+          ".cp",
+          ".chopro"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "chordpro",
+        "scopeName": "",
+        "path": "./syntaxes/chordpro.tmLanguage.json"
+      }
+    ]
+  }
+}
